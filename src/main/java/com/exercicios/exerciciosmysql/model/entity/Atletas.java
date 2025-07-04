@@ -9,7 +9,7 @@ public class Atletas {
     private Integer id;
     private String nome;
     private String posicao;
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name="time_id", referencedColumnName = "id")
     private Times time;
 
